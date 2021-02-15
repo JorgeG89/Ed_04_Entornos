@@ -12,6 +12,12 @@ public class ControladorCuentaBancaria {
         // crea
         CuentaBancaria miCuenta = new CuentaBancaria("Jorge Izquierdo", "00491500051234567892");
 
+        operacionesCuenta(miCuenta);
+
+        System.out.println(miCuenta.toString());
+    }
+
+    private static void operacionesCuenta(CuentaBancaria miCuenta) {
         try {
             miCuenta.ingresar(10000);
         } catch (Exception e) {
@@ -25,8 +31,6 @@ public class ControladorCuentaBancaria {
             System.err.print(e.getMessage());
             System.out.println("Error en el método retirar. ");
         }
-
-        System.out.println(miCuenta.toString());
     }
 
 }
