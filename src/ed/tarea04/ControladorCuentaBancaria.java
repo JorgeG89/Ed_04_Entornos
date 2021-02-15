@@ -12,12 +12,14 @@ public class ControladorCuentaBancaria {
         // crea
         CuentaBancaria miCuenta = new CuentaBancaria("Jorge Izquierdo", "00491500051234567892");
 
-        operacionesCuenta(miCuenta);
+        operacionesCuenta(miCuenta, "texto", 15);
 
         System.out.println(miCuenta.toString());
     }
 
-    private static void operacionesCuenta(CuentaBancaria miCuenta) {
+    private static void operacionesCuenta(CuentaBancaria miCuenta, String operacion, float cantidad) {
+
+
         try {
             miCuenta.ingresar(10000);
         } catch (Exception e) {
