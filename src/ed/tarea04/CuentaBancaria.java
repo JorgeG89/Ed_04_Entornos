@@ -19,6 +19,56 @@ public class CuentaBancaria {
     private static final int TAM_MAX = 100;
     private static final int TAM_MIN = 10;
 
+    // Encapsulamiento
+
+    public String getTitular() {
+        return titular;
+    }
+
+    public void setTitular(String titular) {
+        this.titular = titular;
+    }
+
+    public double getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(double saldo) {
+        this.saldo = saldo;
+    }
+
+    public String getEntidad() {
+        return entidad;
+    }
+
+    public void setEntidad(String entidad) {
+        this.entidad = entidad;
+    }
+
+    public String getOficina() {
+        return oficina;
+    }
+
+    public void setOficina(String oficina) {
+        this.oficina = oficina;
+    }
+
+    public String getNumCuenta() {
+        return numCuenta;
+    }
+
+    public void setNumCuenta(String numCuenta) {
+        this.numCuenta = numCuenta;
+    }
+
+    public static int getTamMax() {
+        return TAM_MAX;
+    }
+
+    public static int getTamMin() {
+        return TAM_MIN;
+    }
+
     /**
      * Constructor CuentaBancaria, que crea una cuenta bancaria con los parámetros de entrada suministrados
      *
